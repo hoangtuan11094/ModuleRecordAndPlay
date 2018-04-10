@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/noise_back"
+    tools:context="com.hoangtuan.modulerecordandplay.MainActivity">
+<android.support.v7.widget.Toolbar
+    android:background="#dedada"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="Home"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.v7.widget.Toolbar>
+   <LinearLayout
+       android:background="@drawable/ic_line_button"
+       android:layout_alignParentBottom="true"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="75dp">
+          <Button
+              android:background="@drawable/ic_line_button"
+              android:layout_weight="1"
+              android:onClick="onRecord"
+              android:text="Recoring"
+              android:id="@+id/btnRecord"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent" />
+          <Button
+              android:background="@drawable/ic_line_button"
+              android:layout_weight="1"
+              android:onClick="onRecord"
+              android:text="Open File"
+              android:id="@+id/btnOpen"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent" />
+      </LinearLayout>
+       <LinearLayout
+
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="75dp">
+           <Button
+               android:background="@drawable/ic_line_button"
+               android:layout_weight="1"
+               android:onClick="onHistory"
+               android:text="History Save"
+               android:id="@+id/btnOpenSave"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+           <Button
+               android:background="@drawable/ic_line_button"
+               android:layout_weight="1"
+               android:onClick="onRecord"
+               android:text="More App"
+               android:id="@+id/btnMore"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+   </LinearLayout>
+
+</RelativeLayout>
